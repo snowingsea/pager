@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>毕业论文</title>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2015-03-09T14:50:18+08:00</updated>
+ <id></id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>正文</title>
+   <link href="/2015/03/09/%E6%AD%A3%E6%96%87/"/>
+   <updated>2015-03-09T00:00:00+08:00</updated>
+   <id>/2015/03/09/正文</id>
+   <content type="html">&lt;h1&gt;线性时态逻辑可满足性工具的设计与实现&lt;/h1&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>提纲</title>
+   <link href="/2015/03/09/%E6%8F%90%E7%BA%B2/"/>
+   <updated>2015-03-09T00:00:00+08:00</updated>
+   <id>/2015/03/09/提纲</id>
+   <content type="html">&lt;p&gt;目录&lt;/p&gt;
+
+&lt;p&gt;摘要&lt;/p&gt;
+
+&lt;p&gt;Abstract&lt;/p&gt;
+
+&lt;p&gt;第一章 绪论&lt;/p&gt;
+
+&lt;p&gt;第二章 相关工作&lt;/p&gt;
+
+&lt;p&gt;第三章 算法描述&lt;/p&gt;
+
+&lt;p&gt;第四章 代码框架描述&lt;/p&gt;
+
+&lt;p&gt;第五章 实验结果&lt;/p&gt;
+
+&lt;p&gt;第六章 总结&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
