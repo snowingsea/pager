@@ -13,7 +13,7 @@ title:               毕业论文
 tagline:             'by snowingsea'
 description:         'sorry 这里什么都没有'
 # url:                 http://lanyon.getpoole.com
-baseurl:             /
+baseurl:             /paper
 paginate:            5
 
 # About/contact
