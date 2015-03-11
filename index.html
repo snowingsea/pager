@@ -14,7 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    <!-- {{ post.content }} -->
+    [字数统计: {{ post.content | strip_html | strip_newlines | split: "" | size }}]
   </div>
   {% endfor %}
 </div>
