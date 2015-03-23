@@ -31,15 +31,16 @@
     <script>
       (function(document) {
         var counter = document.getElementById('counter');
-        var count = 0;
-        var first = true;
-        {% for post in paginator.posts reversed %}
-          if (!first)
-            count += {{ post.content | strip_html | strip_newlines | split: "" | size }};
-          first = false;
-        {% endfor %}
-        counter.innerHTML = '(字数总计：' + count + ')';
-
+        if (counter.innerHTML.length == 0) {
+          var count = 0;
+          var first = true;
+          {% for post in paginator.posts reversed %}
+            if (!first)
+              count += {{ post.content | strip_html | strip_newlines | split: "" | size }};
+            first = false;
+          {% endfor %}
+          counter.innerHTML = '(字数总计：' + count + ')';
+        }
         var toggle = document.querySelector('.sidebar-toggle');
         var sidebar = document.querySelector('#sidebar');
         var checkbox = document.querySelector('#sidebar-checkbox');

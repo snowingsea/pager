@@ -23,3 +23,10 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+    <script>
+      (function(document) {
+        var counter = document.getElementById('counter');
+        counter.innerHTML = '(当前章节字数：' + {{ content | strip_html | strip_newlines | split: "" | size }} + ')';
+      })(document);
+    </script>
