@@ -33,13 +33,16 @@
         var counter = document.getElementById('counter');
         if (counter.innerHTML.length == 0) {
           var count = 0;
+          var last_count = 0;
           var first = true;
           {% for post in paginator.posts reversed %}
-            if (!first)
-              count += {{ post.content | strip_html | strip_newlines | split: "" | size }};
+            if (!first) {
+              last_count = {{ post.content | strip_html | strip_newlines | split: "" | size }};
+              count += last_count;
+            }
             first = false;
           {% endfor %}
-          counter.innerHTML = '(字数总计：' + count + ')';
+          counter.innerHTML = '(字数总计：' + (count - last_count) + ')';
         }
         var toggle = document.querySelector('.sidebar-toggle');
         var sidebar = document.querySelector('#sidebar');
